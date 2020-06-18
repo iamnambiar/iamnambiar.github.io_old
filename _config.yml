@@ -1,1 +1,108 @@
 remote_theme: daattali/beautiful-jekyll@3.0.0
+
+# --- Basic Options --- #
+
+# Name of website
+title: Neeraj C
+
+# Short Description of the site
+description: Hi
+
+# Name to show in the footer
+author: Neeraj C
+
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  Home: "/"
+  About Me: "about_me"
+  
+# --- Logo --- #
+# avatar: "/assets/img/profile_photo.jpg"
+
+# By default, the image is cut into a circle. You can disable this behaviour here.
+# round-avatar: true
+
+# --- Footer Options --- #
+
+# Social Network Links to show in the footer.
+social-network-links:
+  email: "neeraj.cnambiar@gmail.com"
+  github: iamnambiar
+  instagram: iamnambiar
+  twitter: iamnambiar
+  rss: false
+
+# --- General options --- #
+
+# Select which social network share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+
+# --- Web Statistics Section --- #
+
+# Google Analytics ID:
+#google_analytics: ""
+
+
+# --- Colours / background image --- #
+
+# Personalize the colors in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-border-col: "#EAEAEA"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+
+# --- You don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "Asia/Kolkata"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+      readtime: false # add estimated reading time on all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
