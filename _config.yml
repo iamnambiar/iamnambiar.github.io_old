@@ -43,8 +43,8 @@ share-links-active:
 
 # --- Web Statistics Section --- #
 
-# Google Analytics ID:
-#google_analytics: ""
+# Google Analytics ID
+google_analytics: "UA-169928614-1"
 
 
 # --- Colours / background image --- #
@@ -94,11 +94,7 @@ defaults:
 
 # Exclude these files from production site
 exclude:
-  - CHANGELOG.md
-  - CNAME
   - Gemfile
-  - Gemfile.lock
-  - LICENSE
   - README.md
 
 plugins:
